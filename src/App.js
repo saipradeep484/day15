@@ -9,7 +9,7 @@ import Counter2 from "./components/us2";
 import Counter3 from "./components/us1";
 import Game from "./components/game";
 
-functions App() {
+function App() {
   return (
     <Provider store={store}>
       <Box sx={{ display: "flex" }}>
