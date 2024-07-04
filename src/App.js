@@ -9,7 +9,7 @@ import Counter2 from "./components/us2";
 import Counter3 from "./components/us1";
 import Game from "./components/game";
 
-functions App() {
+function App() {
   return (
     <Provider store={store}>
       <Box sx={{ display: "flex" }}>
@@ -22,18 +22,18 @@ functions App() {
             padding: 3,
             marginTop: "64px", // AppBar height
             marginLeft: "140px", // Drawer width
-            display: "inline",//flex
+            display: "inline", //flex
             justifyContent: "center",
             alignItems: "left",
             height: "calc(100vh - 64px)", // Full viewport height minus AppBar height
           }}
         >
-          <Counter/>
-          <Counter2/>
-          <Counter3/>
-          <Counter/>
-          
-          <Game/>
+          <Counter />
+          <Counter2 />
+          <Counter3 />
+          <Counter />
+
+          <Game />
         </Box>
       </Box>
     </Provider>
