@@ -4,7 +4,10 @@ import ButtonAppBar from "./AppBar";
 import PermanentDrawerLeft from "./PermanentDrawer";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
-import Counter from "./components/usestatedemo";
+import Counter from "./components/usestatecounterbeautified";
+import Counter2 from "./components/us2";
+import Counter3 from "./components/us1";
+import Game from "./components/game";
 
 function App() {
   return (
@@ -19,13 +22,18 @@ function App() {
             padding: 3,
             marginTop: "64px", // AppBar height
             marginLeft: "140px", // Drawer width
-            display: "flex",
-            justifyContent: "left",
+            display: "inline",//flex
+            justifyContent: "center",
             alignItems: "left",
             height: "calc(100vh - 64px)", // Full viewport height minus AppBar height
           }}
         >
-          <Counter />
+          <Counter/>
+          <Counter2/>
+          <Counter3/>
+          <Counter/>
+          
+          <Game/>
         </Box>
       </Box>
     </Provider>

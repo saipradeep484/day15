@@ -5,13 +5,14 @@ import InputBase from "@mui/material/InputBase";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import SearchIcon from "@mui/icons-material/Search";
-import PersonIcon from "@mui/icons-material/Person";
+import SwipeLeftIcon from '@mui/icons-material/SwipeLeft';
+//import { blue } from "@mui/material/colors";
 
 export default function ButtonAppBar() {
   return (
     <AppBar
       position="fixed"
-      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 ,background : 'linear-gradient(to left, red , blue)',colour:'black'}}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <Box
@@ -25,7 +26,7 @@ export default function ButtonAppBar() {
             marginY: 1, // Added vertical margin
           }}
           alt="Filmpire logo"
-          src="/images/Academix-logo.png"
+          src="/images/download.jpeg"
         />
 
         <Box
@@ -38,11 +39,11 @@ export default function ButtonAppBar() {
             width: "40%",
           }}
         >
-          <SearchIcon sx={{ color: "white", mr: 1 }} />
+          <SearchIcon sx={{ color: "black", mr: 1 }} />
           <InputBase
-            placeholder="Search for a Movie..."
+            placeholder="Search until you found..."
             sx={{
-              color: "white",
+              color: "black",
               "& ::placeholder": { color: "white", opacity: 0.7 },
               flexGrow: 1,
             }}
@@ -51,13 +52,13 @@ export default function ButtonAppBar() {
 
         <Button
           color="inherit"
-          startIcon={<PersonIcon />}
+          startIcon={<SwipeLeftIcon />}
           sx={{
             backgroundColor: "rgba(255, 255, 255, 0.1)",
             "&:hover": { backgroundColor: "rgba(255, 255, 255, 0.2)" },
           }}
         >
-          LOGIN
+          GET IN BRO
         </Button>
       </Toolbar>
     </AppBar>

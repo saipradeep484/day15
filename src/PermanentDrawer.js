@@ -24,7 +24,7 @@ import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import BloodtypeIcon from "@mui/icons-material/Bloodtype";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 
-const drawerWidth = 240;
+const drawerWidth = 220;
 
 const categories = [
   { name: "Popular", icon: <MovieIcon /> },
@@ -47,11 +47,11 @@ const genres = [
   { name: "Music", icon: <MusicNoteIcon /> },
 ];
 
-const drawerBg = "#0d253f";
-const textColor = "#01b4e4";
-const hoverBg = "#01b4e4";
-const hoverText = "#ffffff";
-const dividerColor = "#01b4e4";
+const drawerBg = "#f44336";
+const textColor = "#eceff1";
+const hoverBg = "#5d4037";
+const hoverText = "#ffff00";
+const dividerColor = "#ffff00";
 
 export default function PermanentDrawerLeft() {
   return (
@@ -69,7 +69,7 @@ export default function PermanentDrawerLeft() {
         },
       }}
       variant="permanent"
-      anchor="left"
+      anchor="center"
     >
       <Box sx={{ overflow: "auto", mt: 2 }}>
         <Typography

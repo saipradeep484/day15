@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Paper } from "@mui/material";import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+import { Box, Typography, Button, Paper } from "@mui/material";
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
-
-function Counter() {
+import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+function Counter3() {
   const [count, setCount] = useState(0);
 
   return (
@@ -13,8 +13,8 @@ function Counter() {
         height: 300,
         p: 3,
         backgroundColor: "#0d253f",
-        color: "#ff1744",
-        borderRadius: 2,
+        color: "#01b4e4",
+        borderRadius: 1,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -28,11 +28,12 @@ function Counter() {
           textAlign: "center",
         }}
       >
-          ......^^^KALKI^^^.....
-          <Box
+        MAHARAJA
+      </Typography>
+      <Box
           component="img"
           sx={{
-            height: 6000, // Increased from 64
+            height: 600, // Increased from 64
             width: "auto",
             maxHeight: { xs: 50, sm: 60, md: 140 }, // Adjusted for different screen sizes
             maxWidth: { xs: 160, sm: 200, md: 240 }, // Adjusted for different screen sizes
@@ -40,10 +41,9 @@ function Counter() {
             marginY: 1, // Added vertical margin
           }}
           alt="Filmpire logo"
-          src="/images/downlad.jpeg"
+          src="/images/Vijay-Sethupathi-in-the-poster-of-Maharaja.jpg"
         />
 
-      </Typography>
       <Typography
         variant="h2"
         sx={{
@@ -84,4 +84,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default Counter3;

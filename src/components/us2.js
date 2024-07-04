@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Paper } from "@mui/material";import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import { Box, Typography, Button, Paper } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
-function Counter() {
+function Counter2() {
   const [count, setCount] = useState(0);
 
   return (
     <Paper
       elevation={3}
       sx={{
-        width: 300,
+        width: 400,
         height: 300,
         p: 3,
         backgroundColor: "#0d253f",
-        color: "#ff1744",
-        borderRadius: 2,
+        color: "#01b4e4",
+        borderRadius: 50,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -28,21 +29,8 @@ function Counter() {
           textAlign: "center",
         }}
       >
-          ......^^^KALKI^^^.....
-          <Box
-          component="img"
-          sx={{
-            height: 6000, // Increased from 64
-            width: "auto",
-            maxHeight: { xs: 50, sm: 60, md: 140 }, // Adjusted for different screen sizes
-            maxWidth: { xs: 160, sm: 200, md: 240 }, // Adjusted for different screen sizes
-            marginLeft: 2,
-            marginY: 1, // Added vertical margin
-          }}
-          alt="Filmpire logo"
-          src="/images/downlad.jpeg"
-        />
-
+        Ticket Counter
+        
       </Typography>
       <Typography
         variant="h2"
@@ -58,18 +46,18 @@ function Counter() {
       <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
         <Button
           variant="contained"
-          startIcon={<ThumbDownAltIcon />}
+          startIcon={<RemoveIcon />}
           onClick={() => setCount(count - 1)}
           sx={{
             backgroundColor: "#01b4e4",
             "&:hover": { backgroundColor: "#0d253f" },
           }}
         >
-          Dislike
+          Sell
         </Button>
         <Button
           variant="contained"
-          endIcon={<ThumbUpAltIcon />}
+          endIcon={<AddIcon />}
           onClick={() => setCount(count + 1)}
           sx={{
             backgroundColor: "#90cea1",
@@ -77,11 +65,11 @@ function Counter() {
             "&:hover": { backgroundColor: "#01b4e4", color: "#ffffff" },
           }}
         >
-          Like
+          Buy
         </Button>
       </Box>
     </Paper>
   );
 }
 
-export default Counter;
+export default Counter2;
